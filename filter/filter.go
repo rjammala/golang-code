@@ -10,7 +10,7 @@ func main() {
 	}
 	r := list.New()
 	for e := l.Front(); e != nil; e = e.Next() {
-		if e.Value.(int) % 2 == 0 {
+		if e.Value.(int) % 2 != 0 {
 			r.PushBack(e.Value)
 		}
 	}
